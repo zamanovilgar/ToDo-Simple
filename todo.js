@@ -21,6 +21,7 @@ const todoList = document.querySelector("#todoList");
 
 todoSend.addEventListener("click", function () {
   const value = todoInput.value;
+  todoInput.value = "";
   todoObj.addTodo(value);
 
   todoObj.renderTodo(todoList);
