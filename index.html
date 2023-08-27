@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>ToDo_Simple</title>
+  </head>
+  <body>
+    <img
+      class="container d-flex justify-content-center img-thumbnail w-25"
+      src="./List.png"
+      alt="todo"
+    />
+
+    <main class="container my-5">
+      <h1 class="text-success d-flex justify-content-center my-5">
+        ToDo_Simple
+      </h1>
+      <div class="d-flex justify-content-center gap-2">
+        <div class="mb-1 w-50">
+          <input id="todoInput" class="form-control w-100" />
+        </div>
+        <div>
+          <button class="btn btn-success w-100" id="todoSend">Send</button>
+        </div>
+      </div>
+      <div
+        class="d-flex flex-column align-items-center gap-4 my-5 text-success"
+        id="todoList"
+      ></div>
+    </main>
+    <script src="./todo.js"></script>
+  </body>
+</html>
